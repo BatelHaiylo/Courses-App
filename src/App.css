@@ -5,8 +5,7 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
-  /* background-color: #f8f8f8; */
-  background-color: #343232;
+  background-color: #f8f8f8;
 }
 .container {
   max-width: 85%;
@@ -93,8 +92,8 @@ p {
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 100vh;
-  padding-top: 30%;
+  height: 60vh;
+  padding-top: 15%;
   padding-right: 50px;
   color: #fff;
   text-align: center;
@@ -109,7 +108,7 @@ p {
   text-transform: uppercase;
 }
 .margin {
-  margin-top: 40.3%;
+  margin-top: 20.3%;
 }
 .grid {
   display: grid;

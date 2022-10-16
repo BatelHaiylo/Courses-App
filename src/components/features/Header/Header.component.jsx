@@ -7,7 +7,7 @@ export default function Header() {
         <section className='header'>
         <div className='container flexSB'>
           <div className='logo'>
-            <h1>ACADEMIA</h1>
+            <h1>GURU DD</h1>
             <span>ONLINE EDUCATION & LEARNING</span>
           </div>
 
