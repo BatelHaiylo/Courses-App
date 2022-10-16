@@ -1,5 +1,5 @@
-function () {
-    return (  );
-}
-
-export default ;
+export default function Hero() {
+    return ( 
+        <div>Hero</div>
+     );
+};
