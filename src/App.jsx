@@ -1,10 +1,12 @@
 import './App.css';
+import Navbar from './components/features/Navbar/Navbar.component'
+import Router from './components/router/Router.component';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
+      <Navbar/>
+      <Router/>
     </div>
   );
-}
-
-export default App;
+};
