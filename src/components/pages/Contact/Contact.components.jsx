@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 
 export default function Contact() {
 
-  const map = 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d904726.6131739549!2d85.24565535!3d27.65273865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1652535615693!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" '
-//   const map = 'https://goo.gl/maps/p28dre7EaYCbEr3RA '
+//   const map = 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d904726.6131739549!2d85.24565535!3d27.65273865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1652535615693!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" '
+  const map = ' https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4926.407270335811!2d-73.97032270404979!3d40.78648073873391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z16DXmdeVINeZ15XXqNenLCDXkNeo16bXldeqINeU15HXqNeZ16o!5e0!3m2!1siw!2sil!4v1665970319302!5m2!1siw!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" '
+//   const map = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49562.458700855124!2d-122.37996223641056!3d37.745742273453764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2z16HXnyDXpNeo16DXodeZ16HXp9eVLCDXp9ec15nXpNeV16jXoNeZ15QsINeQ16jXpteV16og15TXkdeo15nXqg!5e0!3m2!1siw!2sil!4v1665969779358!5m2!1siw!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" '
   return (
     <>
       <Breadcrumb title='Contact us' />
