@@ -1,11 +1,12 @@
-.header {
+.footer {
   padding: 20px 0;
   color: #fff;
+  background-color: blueviolet;
 }
 .logo h1 {
   font-size: 35px;
   font-weight: 900;
 }
-.head .user {
+.head .icon {
   margin-left: 10px;
 }

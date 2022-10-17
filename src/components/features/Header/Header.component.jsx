@@ -11,9 +11,8 @@ export default function Header() {
             <span>ONLINE EDUCATION & LEARNING</span>
           </div>
 
-          <div className='social'>
-            <i className='fab fa-facebook-f icon'></i>
-            <i className='fab fa-instagram icon'></i>
+          <div className='user'>
+            <i className="fa fa-user icon" aria-hidden="true"></i>
           </div>
         </div>
       </section>
