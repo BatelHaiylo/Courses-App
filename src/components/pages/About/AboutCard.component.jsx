@@ -1,7 +1,7 @@
 import Heading from "../../features/Heading/Heading.component";
-import "./About.css"
-import { homeAbout } from "../../../dummydata"
-import Awrapper from "./Awrapper.component"
+import "./About.css";
+import { homeAbout } from "../../../dummydata";
+import SiteMiniData from "../../features/SiteMiniData/SiteMiniData.component";
 
 export default function AboutCard() {
     return ( 
@@ -31,7 +31,7 @@ export default function AboutCard() {
               </div>
             </div>
       </section>
-      <Awrapper />
+      <SiteMiniData />
         </>
      );
 };

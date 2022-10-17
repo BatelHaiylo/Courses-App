@@ -1,10 +1,10 @@
-import React from "react"
+import './SiteMiniData.css'
 import { awrapper } from "../../../dummydata"
 
-export default function Awrapper() {
+export default function SiteMiniData() {
   return (
     <>
-      <section className='awrapper'>
+      <section className='mini-data'>
         <div className='container grid'>
           {awrapper.map((val) => {
             return (

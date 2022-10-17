@@ -45,34 +45,11 @@
   .aboutHome .item:hover p {
     color: #fff;
   }
-  /*----------awrapper------------*/
-  .awrapper {
-    background-color: #a259ff;
-    height: 30vh;
-    color: #fff;
-  }
-  .awrapper .box {
-    padding: 70px 0;
-  }
-  .awrapper img {
-    margin-right: 30px;
-  }
-  .awrapper h1 {
-    font-size: 50px;
-  }
-  .awrapper h3 {
-    font-size: 20px;
-    font-weight: 500;
-  }
-  /*----------awrapper------------*/
   @media screen and (max-width: 768px) {
     .aboutHome .container {
       flex-direction: column-reverse;
     }
     .aboutHome .row {
       width: 100%;
-    }
-    .awrapper {
-      height: 50vh;
     }
   }

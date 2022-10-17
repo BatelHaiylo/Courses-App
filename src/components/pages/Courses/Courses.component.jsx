@@ -1,5 +1,14 @@
+import './Course.css';
+import Breadcrumb from '../../features/Breadcrumb/Breadcrumb.component';
+import OnlineCourses from './OnlineCourses.component';
+import CourseCard from './CourseCard.component'; 
+
 export default function Courses() {
     return ( 
-        <div>all courses</div>
+        <div>
+            <Breadcrumb title='Explore Courses' />
+            <CourseCard />
+            <OnlineCourses />
+        </div>
      );
 };

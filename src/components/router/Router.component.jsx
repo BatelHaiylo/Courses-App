@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import {Home, Courses, About, Pricing, Community, Contact, Profile, PageError} from './Router'
 
-function Router() {
+export default function Router() {
     return ( 
         <Routes>
             <Route path='/' element={<Home/>}/>
@@ -14,6 +14,4 @@ function Router() {
             <Route path='*' element={<PageError/>}/>
         </Routes>
      );
-}
-
-export default Router;
+};

@@ -16,7 +16,7 @@ export default function Navbar() {
             <li><Link to='/courses'>All Courses</Link></li>
             <li><Link to='/about'>About</Link></li>
             <li><Link to='/pricing'>Pricing</Link></li>
-            <li><Link to='/Community'>Community</Link></li>
+            <li><Link to='/community'>Community</Link></li>
             <li><Link to='/contact'>Contact</Link></li>
           </ul>
           <div className='start'>

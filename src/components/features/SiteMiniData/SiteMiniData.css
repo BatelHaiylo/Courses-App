@@ -1,0 +1,23 @@
+.mini-data {
+  background-color: #a259ff;
+  height: 30vh;
+  color: #fff;
+}
+.mini-data .box {
+  padding: 70px 0;
+}
+.mini-data img {
+  margin-right: 30px;
+}
+.mini-data h1 {
+  font-size: 50px;
+}
+.mini-data h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .mini-data {
+    height: 30vh;
+   }
+}

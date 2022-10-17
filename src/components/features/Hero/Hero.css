@@ -22,11 +22,11 @@
   }
   @media screen and (max-width: 768px) {
     .margin {
-      height: 40vh;
+      height: 50vh;
     }
     .hero {
       background-position: right;
-      padding-top: 50%;
+      padding-top: 60%;
       height: 80vh;
     }
     .hero .row {

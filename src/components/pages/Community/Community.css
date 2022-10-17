@@ -1,0 +1,34 @@
+.community img {
+  width: 100%;
+  height: 100%;
+}
+.community .text {
+  padding: 40px 30px;
+}
+.community h1 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 20px 0;
+  transition: 0.5s;
+}
+.community h1:hover {
+  color: #1eb2a6;
+  cursor: pointer;
+}
+.community span {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #1eb2a6;
+}
+.community span label {
+  margin-left: 10px;
+  color: grey;
+  font-size: 14px;
+}
+.community span:nth-last-child(1) label {
+  color: #1eb2a6;
+}
+.community p {
+  color: grey;
+}
