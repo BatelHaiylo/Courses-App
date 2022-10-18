@@ -1,6 +1,5 @@
 import './Header.css';
-import React from "react"
-
+import { Link } from 'react-router-dom';
 export default function Header() {
     return ( 
         <>
@@ -12,7 +11,7 @@ export default function Header() {
           </div>
 
           <div className='user'>
-            <i className="fa fa-user icon" aria-hidden="true"></i>
+            <Link to='/profile'><i className="fa fa-user icon" aria-hidden="true"></i></Link>
           </div>
         </div>
       </section>

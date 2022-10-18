@@ -1,7 +1,13 @@
-function Profile() {
-    return ( 
-        <div>user profile</div>
-     );
-}
+// import Table from "../../features/Table/Table.component";
+import Breadcrumb from "../../features/Breadcrumb/Breadcrumb.component";
+import CourseTable from "../../features/Table/Table.component";
 
-export default Profile;
+export default function Profile() {
+    return ( 
+        <>
+        <Breadcrumb title='profile'/>
+        {/* <Table/> */}
+        <CourseTable/>
+        </>
+     );
+};
