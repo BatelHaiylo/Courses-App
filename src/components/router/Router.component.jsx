@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import {Home, Courses, About, Pricing, Community, Contact, Profile, PageError} from './Router'
+import {Home, Courses, About, Pricing, Community, Contact, Profile, PageError} from './Router';
+import Register from '../features/SignIn/Register.component';
 
 export default function Router() {
     return ( 
@@ -11,6 +12,7 @@ export default function Router() {
             <Route path='/community' element={<Community/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/profile' element={<Profile/>}/>
+            <Route path='/register' element={<Register/>}/>
             <Route path='*' element={<PageError/>}/>
         </Routes>
      );

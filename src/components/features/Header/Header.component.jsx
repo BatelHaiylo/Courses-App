@@ -1,5 +1,7 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
+import PopUp from '../SignIn/PopUp.component';
+
 export default function Header() {
     return ( 
         <>
@@ -10,6 +12,7 @@ export default function Header() {
             <span>ONLINE EDUCATION & LEARNING</span>
           </div>
 
+          <PopUp/>
           <div className='user'>
             <Link to='/profile'><i className="fa fa-user icon" aria-hidden="true"></i></Link>
           </div>
