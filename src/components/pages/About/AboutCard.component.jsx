@@ -1,7 +1,7 @@
 import Heading from "../../features/Heading/Heading.component";
 import "./About.css";
 import { homeAbout } from "../../../dummydata";
-import SiteMiniData from "../../features/SiteMiniData/SiteMiniData.component";
+import SiteMiniData from "../../features/Sections/SiteMiniData.component";
 
 export default function AboutCard() {
     return ( 

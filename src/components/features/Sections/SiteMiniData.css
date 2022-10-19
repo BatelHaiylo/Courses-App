@@ -1,6 +1,6 @@
 .mini-data {
-  background-color: #a259ff;
-  height: 30vh;
+  background-color:#a259ff;
+  height: 20vh;
   color: #fff;
 }
 .mini-data .box {
@@ -19,5 +19,13 @@
 @media screen and (max-width: 768px) {
   .mini-data {
     height: 30vh;
+    display: flex;
+    flex-direction: column;
    }
+   .mini-data .box {
+    padding: 10px 0;
+  }
+  .mini-data h1 {
+    font-size: 40px;
+  }
 }

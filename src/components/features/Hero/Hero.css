@@ -1,5 +1,5 @@
 .hero {
-    background-image: url("../../../../public/images/bg.webp");
+    background-image: url("../../../../public/images/home.webp");
     background-size: cover;
     background-attachment: fixed;
     position: absolute;
@@ -22,7 +22,7 @@
   }
   @media screen and (max-width: 768px) {
     .margin {
-      height: 50vh;
+      height: 47vh;
     }
     .hero {
       background-position: right;

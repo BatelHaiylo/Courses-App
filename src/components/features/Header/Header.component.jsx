@@ -1,6 +1,6 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
-import PopUp from '../SignIn/PopUp.component';
+import PopUp from '../Login/PopUp.component';
 
 export default function Header() {
     return ( 

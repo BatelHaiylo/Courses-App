@@ -3,8 +3,8 @@ import { price } from "../../../dummydata"
 export default function PriceCard() {
   return (
     <>
-      {price.map((val) => (
-        <div className='items shadow'>
+      {price.map((val,index) => (
+        <div className='items shadow' key={index}>
           <h4>{val.name}</h4>
           <h1>
             <span>$</span>

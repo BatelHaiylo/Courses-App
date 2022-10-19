@@ -9,6 +9,7 @@ export default function Courses() {
             <Breadcrumb title='Explore Courses' />
             <CourseCard />
             <OnlineCourses />
+            <div className='end-margin'></div>
         </div>
      );
 };

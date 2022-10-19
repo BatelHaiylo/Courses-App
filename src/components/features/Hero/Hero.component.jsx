@@ -9,7 +9,7 @@ export default function Hero() {
           <div className='container'>
             <div className='row'>
               <Heading subtitle='WELCOME TO GURU DD' title='Best Online Education Expertise' />
-             <Video src="/video/homeVid.mp4" alt="home video" />
+             <Video src="/video/homeVid.mp4" alt="home video"/>
               <div className='button'>
                 <button className='primary-btn'>
                   GET STARTED NOW <i className='fa fa-long-arrow-alt-right'></i>

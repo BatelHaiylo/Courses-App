@@ -1,6 +1,11 @@
 .between-home-sec{
-    height: 36vh;
+    height: 34vh;
 }
 .hprice-padding{
     padding-top: 0;
+}
+@media screen and (max-width: 768px) {
+    .between-home-sec{
+        display: none;
+    }
 }

@@ -8,6 +8,7 @@ export default function Profile() {
         <Breadcrumb title='profile'/>
         {/* <Table/> */}
         <CourseTable/>
+        <div className='end-margin'></div>
         </>
      );
 };

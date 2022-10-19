@@ -1,3 +1,6 @@
+import SignIn from "../features/SingIn/SignIn.component";
+import SignUp from "../features/SignUp/SignUp.component";
+import Account from "../pages/Account/Account.component";
 import Home from "../pages/Home/Home.components";
 import Courses from "../pages/Courses/Courses.component";
 import About from "../pages/About/About.component";
@@ -8,5 +11,5 @@ import Profile from "../pages/Profile/Profile.component";
 import PageError from "../pages/PageError/PageError.component";
 
 export {
-    Home, Courses, About, Pricing, Community, Contact, Profile, PageError
+    SignIn, SignUp, Account, Home, Courses, About, Pricing, Community, Contact, Profile, PageError
 }

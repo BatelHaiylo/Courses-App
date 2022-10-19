@@ -6,9 +6,9 @@ export default function SiteMiniData() {
     <>
       <section className='mini-data'>
         <div className='container grid'>
-          {awrapper.map((val) => {
+          {awrapper.map((val,index) => {
             return (
-              <div className='box flex'>
+              <div className='box flex' key={index}>
                 <div className='img'>
                   <img src={val.cover} alt='' />
                 </div>

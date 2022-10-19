@@ -10,8 +10,8 @@ export default function Testimonial() {
           <Heading subtitle='TESTIMONIAL' title='Our Successful Students' />
 
           <div className='content grid2'>
-            {testimonal.map((val) => (
-              <div className='items shadow'>
+            {testimonal.map((val,index) => (
+              <div className='items shadow' key={index}>
                 <div className='box flex'>
                   <div className='img'>
                     <img src={val.cover} alt='' />

@@ -8,7 +8,7 @@ import Form from '../Form/Form.component';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-export default function Singin(props) {
+export default function Login(props) {
   const { onClose, open } = props;
 
   const handleClose = () => {
@@ -28,7 +28,7 @@ export default function Singin(props) {
   );
 }
 
-Singin.propTypes = {
+Login.propTypes = {
   onClose: PropTypes.func.isRequired,
   open: PropTypes.bool.isRequired,
 };

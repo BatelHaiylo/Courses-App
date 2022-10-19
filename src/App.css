@@ -83,6 +83,9 @@ p {
   line-height: 30px;
   font-size: 18px;
 }
+.end-margin{
+  margin-bottom: 5%;
+}
 
 .back {
   background-image: url("../public/images/back.webp");
@@ -151,7 +154,7 @@ p {
   .grid2,
   .grid3,
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .back {
     background-position: center;

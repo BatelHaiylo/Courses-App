@@ -11,10 +11,9 @@ export default function PopularCourses() {
           <Heading subtitle='our courses' title='explore our popular online courses' />
 
           <div className='coursesCard'>
-            {/* copy code form  coursesCard */}
             <div className='grid2'>
-              {coursesCard.slice(0, 3).map((val) => (
-                <div className='items'>
+              {coursesCard.slice(0, 3).map((val,index) => (
+                <div className='items' key={index}>
                   <div className='content flex'>
                     <div className='left'>
                       <div className='img'>

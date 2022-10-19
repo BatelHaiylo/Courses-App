@@ -59,11 +59,11 @@ export default function CourseTable() {
               key={index}
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              {Object.values(obj).map((item) =>
+              {Object.values(obj).map((item,index) =>
                 typeof item != "object" ? (
-                  <TableCell align="right">{item}</TableCell>
+                  <TableCell align="right" key={index}>{item}</TableCell>
                 ) : (
-                  <TableCell align="right">{item.name}</TableCell>
+                  <TableCell align="right" key={index}>{item.name}</TableCell>
                 )
               )}
             </TableRow>
