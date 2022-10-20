@@ -50,7 +50,6 @@ export default function Form({ title }) {
           type="text"
           name="email"
           defaultValue={user.email}
-          id="email"
           required
           onChange={changeInput}
         />
@@ -63,7 +62,6 @@ export default function Form({ title }) {
           type="password"
           name="password"
           defaultValue={user.password}
-          id="psw"
           required
           onChange={changeInput}
         />
@@ -76,7 +74,6 @@ export default function Form({ title }) {
           type="password"
           name="password"
           defaultValue={user.password}
-          id="verify-psw"
           required
           onChange={changeInput}
         />
@@ -89,7 +86,6 @@ export default function Form({ title }) {
           type="text"
           name="fName"
           defaultValue={user.fName}
-          id="fName"
           required
           onChange={changeInput}
         />
@@ -102,7 +98,6 @@ export default function Form({ title }) {
           type="text"
           name="lName"
           defaultValue={user.lName}
-          id="lName"
           required
           onChange={changeInput}
         />

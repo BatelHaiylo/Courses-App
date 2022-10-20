@@ -162,3 +162,17 @@ p {
     height: 80vh;
   }
 }
+
+.popBtn{
+  color: #1eb2a6 !important; 
+  background-color: #fff !important;
+  border: none !important;
+  border-radius: 3px;
+  cursor: pointer !important;
+  box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%) !important;
+  transition: 0.5s !important;
+}
+
+.popBtn:hover {
+box-shadow: none !important;
+}

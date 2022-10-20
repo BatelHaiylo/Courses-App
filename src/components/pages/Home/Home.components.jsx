@@ -13,7 +13,7 @@ export default function Home() {
         <Hero/>
         {/* <Video src="/video/homeVid.mp4" alt="home video" /> */}
         <div className='between-home-sec'></div>
-        <SiteMiniData className='data'/>
+        {/* <SiteMiniData className='data'/> */}
         <PopularCourses/>
         <OnlineCourses/>
         <Testimonial/>

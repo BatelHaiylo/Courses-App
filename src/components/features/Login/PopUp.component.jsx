@@ -1,8 +1,6 @@
 import * as React from 'react';
-import './PopUp.css';
 import { useState } from 'react';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Login from './Login.component';
 
 export default function PopUp() {

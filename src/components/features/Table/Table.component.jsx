@@ -74,7 +74,6 @@ export default function CourseTable() {
   );
 }
 
-{
   /* {
                 CoursesData.map((obj,index) =>
                     <TableRow key={index} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
@@ -92,4 +91,3 @@ export default function CourseTable() {
                     </TableRow>)
 
             } */
-}

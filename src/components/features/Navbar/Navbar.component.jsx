@@ -18,6 +18,7 @@ export default function Navbar() {
             <li><Link to='/pricing'>Pricing</Link></li>
             <li><Link to='/community'>Community</Link></li>
             <li><Link to='/contact'>Contact</Link></li>
+            <li><Link to='/account'>Account</Link></li>
           </ul>
           <div className='start'>
             <div className='button'>GET CERTIFICATE</div>

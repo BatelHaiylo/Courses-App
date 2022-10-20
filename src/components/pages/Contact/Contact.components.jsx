@@ -1,6 +1,5 @@
 import './Contact.css';
 import Breadcrumb from '../../features/Breadcrumb/Breadcrumb.component';
-import { Link } from 'react-router-dom';
 
 export default function Contact() {
 
@@ -13,7 +12,7 @@ export default function Contact() {
       <section className='contacts padding'>
         <div className='container shadow flexSB'>
           <div className='left row'>
-            <iframe src={map}></iframe>
+            <iframe src={map} title='map'></iframe>
           </div>
           <div className='right row'>
             <h1>Contact us</h1>
