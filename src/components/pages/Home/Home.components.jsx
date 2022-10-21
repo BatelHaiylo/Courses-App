@@ -5,18 +5,17 @@ import PopularCourses from '../../features/Sections/PopularCourses.component';
 import OnlineCourses from '../Courses/OnlineCourses.component';
 import Testimonial from '../../features/Testimonal/Testimonial.component';
 import PricingSec from '../../features/Sections/PricingSec.component';
-import Video from '../../features/Video/Video.component';
+import HeroSection from '../../features/HeroSection/HeroSection.component';
 
 export default function Home() {
     return ( 
         <>
         <Hero/>
-        {/* <Video src="/video/homeVid.mp4" alt="home video" /> */}
+        {/* <HeroSection/> */}
         <div className='between-home-sec'></div>
-        {/* <SiteMiniData className='data'/> */}
         <PopularCourses/>
         <OnlineCourses/>
-        <Testimonial/>
+        <Testimonial style={{"background-color": "#ffc700"}}/>
         <PricingSec/>
         <div className='end-margin'></div>
         </>

@@ -21,7 +21,9 @@ export default function Navbar() {
             <li><Link to='/account'>Account</Link></li>
           </ul>
           <div className='start'>
-            <div className='button'>GET CERTIFICATE</div>
+            <div className='button'>
+              <Link to='/courses' className="nav-link">GET CERTIFICATE</Link>
+              </div>
           </div>
           <button className='toggle' onClick={() => setClick(!click)}>
             {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}

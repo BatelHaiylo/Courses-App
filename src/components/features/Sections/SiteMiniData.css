@@ -16,6 +16,10 @@
   font-size: 20px;
   font-weight: 500;
 }
+
+.homeAbout{
+  background-color: #ffc700;
+}
 @media screen and (max-width: 768px) {
   .mini-data {
     height: 30vh;

@@ -7,7 +7,7 @@ export default function Profile() {
         <>
         <Breadcrumb title='profile'/>
         {/* <Table/> */}
-        <CourseTable/>
+        <div className="profile-table"><CourseTable/></div>
         <div className='end-margin'></div>
         </>
      );
