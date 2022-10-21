@@ -4,7 +4,7 @@ import PriceCard from "../Card/PriceCard.component";
 export default function PricingSec() {
   return (
     <>
-      <section className='hprice-padding'>
+      <section className='hprice-padding  homeAbout'>
         <Heading subtitle='OUR PRICING' title='Pricing & Packages' />
         <div className='price container grid'>
           <PriceCard />

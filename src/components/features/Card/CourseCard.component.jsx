@@ -1,5 +1,6 @@
-import "./Course.css"
-import { coursesCard } from "../../../dummydata"
+import "../../pages/Courses/Course.css";
+import { coursesCard } from "../../../dummydata";
+import StyledCard from "./Card.component";
 
 export default function CourseCard () {
   return (
@@ -7,7 +8,7 @@ export default function CourseCard () {
       <section className='coursesCard'>
         <div className='container grid2'>
           {coursesCard.map((val,index) => (
-            <div className='items' key={index}>
+            <StyledCard className='items' key={index}>
               <div className='content flex'>
                 <div className='left'>
                   <div className='img'>
@@ -47,7 +48,7 @@ export default function CourseCard () {
                 </h3>
               </div>
               <button className='outline-btn'>ENROLL NOW !</button>
-            </div>
+            </StyledCard>
           ))}
         </div>
       </section>

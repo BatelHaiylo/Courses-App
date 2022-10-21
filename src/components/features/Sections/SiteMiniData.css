@@ -1,10 +1,10 @@
 .mini-data {
-  background-color:#a259ff;
-  height: 20vh;
+  background-color:#ff8577;
+  height: 15vh;
   color: #fff;
-}
-.mini-data .box {
-  padding: 70px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .mini-data img {
   margin-right: 30px;
@@ -16,10 +16,9 @@
   font-size: 20px;
   font-weight: 500;
 }
-
-.homeAbout{
-  background-color: #ffc700;
-}
+/* .homeAbout{
+  background-color: #ff8577;
+} */
 @media screen and (max-width: 768px) {
   .mini-data {
     height: 30vh;

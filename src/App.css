@@ -23,12 +23,12 @@ body {
   text-align: center;
   margin-left: 5px;
   background-color: rgba(255, 255, 255, 0.3);
-  color: #0acf83;
+  color: #f24e1e;
   transition: 0.5s;
 }
 .icon:hover {
   cursor: pointer;
-  background-color: #0acf83;
+  background-color: #f24e1e;
   color: #fff;
 }
 a {
@@ -43,7 +43,7 @@ li {
 button {
   padding: 17px 30px;
   background-color: #fff;
-  color: #1eb2a6;
+  color: #f24e1e;
   font-weight: 600;
   border: none;
   margin: 30px 10px 0 0;
@@ -59,7 +59,7 @@ button:hover {
   box-shadow: none;
 }
 .primary-btn {
-  background-color: #1eb2a6;
+  background-color: #f24e1e;
   color: #fff;
 }
 
@@ -71,7 +71,7 @@ button:hover {
 #heading h3 {
   font-weight: 600;
   letter-spacing: 1px;
-  color: #1eb2a6;
+  color: #f24e1e;
   text-transform: uppercase;
 }
 #heading h1 {
@@ -88,7 +88,8 @@ p {
 }
 
 .back {
-  background-image: url("../public/images/back.webp");
+  /* background-image: url("../public/images/back.webp"); */
+  background-color: #ff8577;
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
@@ -130,12 +131,12 @@ p {
 .outline-btn {
   margin: 0;
   box-shadow: none;
-  border: 2px solid #1eb2a6;
+  border: 2px solid #f24e1e;
   width: 100%;
   transition: 0.5s;
 }
 .outline-btn:hover {
-  background-color: #1eb2a6;
+  background-color: #f24e1e;
   color: #fff;
 }
 .grid3 {
@@ -164,7 +165,7 @@ p {
 }
 
 .popBtn{
-  color: #1eb2a6 !important; 
+  color: #f24e1e !important; 
   background-color: #fff !important;
   border: none !important;
   border-radius: 3px;

@@ -1,6 +1,8 @@
-import "./Course.css"
-import { online } from "../../../dummydata"
-import Heading from "../../features/Heading/Heading.component"
+import "./Course.css";
+import { online } from "../../../dummydata";
+import Heading from "../../features/Heading/Heading.component";
+import StyledCard from "../../features/Card/Card.component"; 
+
 export default function OnlineCourses() {
   return (
     <>

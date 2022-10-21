@@ -1,19 +1,21 @@
-import React from "react"
-import Heading from "../Heading/Heading.component"
-import '../../pages/Courses/Course.css'
-import { coursesCard } from "../../../dummydata"
+import React from "react";
+import Heading from "../Heading/Heading.component";
+import '../../pages/Courses/Course.css';
+import { coursesCard } from "../../../dummydata";
+import StyledCard from "../Card/Card.component";
+
 
 export default function PopularCourses() {
   return (
     <>
-      <section className='homeAbout'>
+      <section>
         <div className='container'>
           <Heading subtitle='our courses' title='explore our popular online courses' />
 
           <div className='coursesCard'>
             <div className='grid2'>
               {coursesCard.slice(0, 3).map((val,index) => (
-                <div className='items' key={index}>
+                <StyledCard className='items' key={index}>
                   <div className='content flex'>
                     <div className='left'>
                       <div className='img'>
@@ -53,7 +55,7 @@ export default function PopularCourses() {
                     </h3>
                   </div>
                   <button className='outline-btn'>ENROLL NOW !</button>
-                </div>
+                </StyledCard>
               ))}
             </div>
           </div>

@@ -1,10 +1,11 @@
 import { price } from "../../../dummydata"
+import StyledCard from "./Card.component"
 
 export default function PriceCard() {
   return (
     <>
       {price.map((val,index) => (
-        <div className='items shadow' key={index}>
+        <StyledCard className='items shadow' key={index}>
           <h4>{val.name}</h4>
           <h1>
             <span>$</span>
@@ -12,7 +13,7 @@ export default function PriceCard() {
           </h1>
           <p>{val.desc}</p>
           <button className='outline-btn'>GET STARTED</button>
-        </div>
+        </StyledCard>
       ))}
     </>
   )

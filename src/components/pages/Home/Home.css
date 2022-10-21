@@ -1,8 +1,12 @@
 .between-home-sec{
-    height: 40vh;
+    height: 50vh;
 }
 .hprice-padding{
     padding-top: 0;
+}
+.homemarginbottom{
+    height: 40px;
+    /* background-color: #ff8577; */
 }
 @media screen and (max-width: 768px) {
     .between-home-sec{

@@ -39,7 +39,7 @@ export default function SignIn() {
 
   return (
     <>
-      <Breadcrumb title="Join & Enjoy" />
+      <Breadcrumb title="Welcome" />
       <div className="signin-box">
         <div>
           <h1>Sign in to your account</h1>
@@ -63,9 +63,8 @@ export default function SignIn() {
               variant="standard"
               type="text"
               name="email"
-              // defaultValue={}
               required
-              // onChange={changeInput}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <br />
             <TextField
@@ -74,42 +73,8 @@ export default function SignIn() {
               variant="standard"
               type="password"
               name="password"
-              // defaultValue={}
+              onChange={(e) => setPassword(e.target.value)}
               required
-              // onChange={}
-            />
-            <br />
-            <TextField
-              id="standard-basic"
-              label="Verify Password"
-              variant="standard"
-              type="password"
-              name="password"
-              // defaultValue={}
-              required
-              // onChange={}
-            />
-            <br />
-            <TextField
-              id="standard-basic"
-              label="First Name"
-              variant="standard"
-              type="text"
-              name="fName"
-              // defaultValue={}
-              required
-              // onChange={changeInput}
-            />
-            <br />
-            <TextField
-              id="standard-basic"
-              label="Last Name"
-              variant="standard"
-              type="text"
-              name="lName"
-              // defaultValue={}
-              required
-              // onChange={}
             />
             <br />
             <button type="submit" className="popBtn">

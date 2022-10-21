@@ -5,6 +5,9 @@ header {
 header .nav {
   display: flex !important;
 }
+.nav-link{
+  color: #fff;
+}
 header li {
   margin-right: 40px;
 }
@@ -20,7 +23,7 @@ header ul li a:hover {
   color: #9ff0ed;
 }
 .start {
-  background-color: #9698e3;
+  background-color: #f24e1e;
   padding: 30px 70px;
   color: #fff;
   clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
@@ -35,7 +38,8 @@ header ul li a:hover {
   }
   header {
     margin: 0;
-    background-color: #9698e3;
+    background-color: #f24e1e;
+    opacity: 90%;
     position: relative;
   }
   header ul.flexSB {
@@ -58,6 +62,6 @@ header ul li a:hover {
     top: 7vh;
     left: 0;
     width: 100%;
-    background-color: #9698e3;
+    background-color: #f24e1e;
   }
 }

@@ -1,10 +1,11 @@
 import { blog } from "../../../dummydata"
+import StyledCard from "./Card.component"
 
 export default function CommunityCard() {
   return (
     <>
       {blog.map((val) => (
-        <div className='items shadow'>
+        <StyledCard>
           <div className='img'>
             <img src={val.cover} alt='' />
           </div>
@@ -26,7 +27,7 @@ export default function CommunityCard() {
             <h1>{val.title}</h1>
             <p>{val.desc}</p>
           </div>
-        </div>
+        </StyledCard>
       ))}
     </>
   )
