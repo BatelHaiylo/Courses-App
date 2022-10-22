@@ -15,7 +15,7 @@
   position: absolute;
   bottom: 0;
   left: 60px;
-  background-color: #1eb2a6;
+  background-color: #f24e1e;
   color: #fff;
 }
 .testimonal .name {
@@ -26,7 +26,7 @@
   margin-bottom: 5px;
 }
 .testimonal .name span {
-  color: #1eb2a6;
+  color: #f24e1e;
 }
 .testimonal p {
   margin-top: 20px;
@@ -34,7 +34,7 @@
   transition: 0.5s;
 }
 .testimonal .items:hover {
-  background-color: #1eb2a6;
+  background-color: #ff8577;
   color: #fff;
   cursor: pointer;
 }
@@ -44,5 +44,5 @@
 }
 .testimonal .items:hover i {
   background-color: #fff;
-  color: #1eb2a6;
+  color: #f24e1e;
 }

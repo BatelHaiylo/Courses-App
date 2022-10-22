@@ -6,7 +6,9 @@ import TextField from "@mui/material/TextField";
 import { UserAuth } from "../../../context/AuthContext";
 import Breadcrumb from "../Breadcrumb/Breadcrumb.component";
 
+
 export default function SignUp() {
+  const [additionalUserData, setAdditionalUserData] = useState({ firstName: '', lastName: '', email: '', password: '' })
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -14,11 +16,16 @@ export default function SignUp() {
   const { createUser } = UserAuth();
   const navigate = useNavigate();
 
+  const handleChange = (e) => {
+    setAdditionalUserData(additionalUserData[e.target.name] = e.target.value);
+  };
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
     try {
-      await createUser(email, password);
+      await createUser(email, password)
       navigate("/home");
     } catch (e) {
       setError(e.message);
@@ -39,7 +46,7 @@ export default function SignUp() {
         </div>
         <Box
           sx={{
-            "& > :not(style)": { m: 1, width: "50ch" },
+            "& > :not(style)": { m: 1},
           }}
           noValidate
           autoComplete="off"
@@ -51,7 +58,6 @@ export default function SignUp() {
               variant="standard"
               type="text"
               name="email"
-              // defaultValue={}
               required
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -62,7 +68,6 @@ export default function SignUp() {
               variant="standard"
               type="password"
               name="password"
-              // defaultValue={}
               required
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -73,9 +78,9 @@ export default function SignUp() {
               label="Verify Password"
               variant="standard"
               type="password"
-              name="password"
-              // required
-              // onChange={}
+              name="verifypassword"
+              required
+              onChange={handleChange}
             />
             <br />
             <TextField
@@ -83,9 +88,9 @@ export default function SignUp() {
               label="First Name"
               variant="standard"
               type="text"
-              name="fName"
-              // required
-              // onChange={changeInput}
+              name="firstName"
+              required
+              onChange={handleChange}
             />
             <br />
             <TextField
@@ -93,9 +98,9 @@ export default function SignUp() {
               label="Last Name"
               variant="standard"
               type="text"
-              name="lName"
-              // required
-              // onChange={}
+              name="lastName"
+              required
+              onChange={handleChange}
             />
             <br />
             <p className="">
@@ -111,3 +116,23 @@ export default function SignUp() {
     </>
   );
 }
+
+
+// const UserImpl = {
+// displayName: null
+// email: "estherhayilo@gmail.com"
+// emailVerified: false
+// metadata: {
+//   createdAt: "1666398466776"
+//   creationTime: "Sat, 22 Oct 2022 00:27:46 GMT"
+//   lastLoginAt: "1666398466776"
+//   lastSignInTime: "Sat, 22 Oct 2022 00:27:46 GMT"
+// }
+// phoneNumber: null
+// photoURL: null
+// proactiveRefresh
+// : 
+// providerData: [
+//   0:{providerId: 'password', uid: 'estherhayilo@gmail.com', displayName: null, email: 'estherhayilo@gmail.com', phoneNumber: null, …}
+// ]
+// }

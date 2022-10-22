@@ -29,7 +29,7 @@ export default function Header() {
           <span>ONLINE EDUCATION & LEARNING</span>
         </div>
         <button className="toggle" onClick={() => setClick(!click)}>
-          <Link to="/profile">
+          <Link to="/account">
             <i className="fa fa-user icon" aria-hidden="true"></i>
           </Link>
         </button>
@@ -43,12 +43,12 @@ export default function Header() {
                 log out
               </Button>
               <p>Hi {user.displayName}</p>
-              <Link to="/profile">
+              <Link to="/account">
                 <i className="fa fa-user icon" aria-hidden="true"></i>
               </Link>
             </div>
           ) : (
-            <Link to="/profile">
+            <Link to="/account">
               <i className="fa fa-user icon" aria-hidden="true"></i>
             </Link>
           )}

@@ -243,68 +243,26 @@ export const homeAbout = [
       course: "17 Courses",
     },
   ]
-  export const team = [
-    {
-      cover: "./images/team/t1.webp",
-      name: "Ph.D Adrian Molises",
-      work: "DEVELOPER AND LEAD INSTRUCTOR",
-    },
-    {
-      cover: "./images/team/t2.webp",
-      name: "Ph.D Arthur MaGregor",
-      work: "DEVELOPER AND LEAD INSTRUCTOR",
-    },
-    {
-      cover: "./images/team/t3.webp",
-      name: "Ph.D Anna Hanzen",
-      work: "DEVELOPER AND LEAD INSTRUCTOR",
-    },
-    {
-      cover: "./images/team/t4.webp",
-      name: "Ph.D Brian Wooden",
-      work: "DEVELOPER AND LEAD INSTRUCTOR",
-    },
-    {
-      cover: "./images/team/t5.webp",
-      name: "Ph.D Adrian Molises",
-      work: "DEVELOPER AND LEAD INSTRUCTOR",
-    },
-    {
-      cover: "./images/team/t6.webp",
-      name: "Ph.D Arthur MaGregor",
-      work: "DEVELOPER AND LEAD INSTRUCTOR",
-    },
-    {
-      cover: "./images/team/t7.webp",
-      name: "Ph.D Anna Hanzen",
-      work: "DEVELOPER AND LEAD INSTRUCTOR",
-    },
-    {
-      cover: "./images/team/t8.webp",
-      name: "Ph.D Brian Wooden",
-      work: "DEVELOPER AND LEAD INSTRUCTOR",
-    },
-  ]
   export const price = [
     {
-      name: "BASIC PLAN",
-      price: "49K",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      name: "STARTER",
+      price: "Free",
+      desc: "limited 2 first class course ,Access to the mobile application, without limitation for the time of the account, lessons cannot be shared or savedת Suitable for those who want to check if this is the next step they are interested in.",
     },
     {
-      name: "BEGINNER PLAN",
-      price: "79K",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      name: "PERSONAL HOBBIE",
+      price: "$15 per month",
+      desc: "3 Free courses Sharing permissions Shared and private projects Team libraries Audio conversationsת Suitable for those who want to learn and explore for fun.",
     },
     {
-      name: "PREMIUM PLAN",
-      price: "109k",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      name: "PROFESSIONAL PLAN",
+      price: "$25 per month",
+      desc: "10 Free Courses Sharing permissions Shared and private projects Team libraries Audio conversationsת Suitable for those who want to easily learn anything related to the world of content they are dealing with.",
     },
     {
-      name: "ULTIMATE PLAN",
-      price: "149K",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      name: "ORGANIZATION PLAN",
+      price: "$45 per editor/month",
+      desc: "Org-wide libraries system, analytics Branching and merging Centralized file management Unified admin and billing Private plugins and widgets Single sign-on.",
     },
   ]
   export const faq = [

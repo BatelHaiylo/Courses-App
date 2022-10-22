@@ -14,7 +14,6 @@ export default function Home() {
         <PopularCourses/>
         <OnlineCourses/>
         <Testimonial/>
-        <PricingSec/>
         <div className='homemarginbottom'></div>
         </>
      );
