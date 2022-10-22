@@ -89,7 +89,7 @@ p {
 
 .back {
   /* background-image: url("../public/images/back.webp"); */
-  background-color: #ff8577;
+  background-color: #000;
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
