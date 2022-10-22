@@ -33,9 +33,9 @@ export default function PopularCourses() {
                         <label htmlFor=''>(5.0)</label>
                       </div>
                       <div className='details'>
-                        {val.courTeacher.map((details) => (
+                        {val.courTeacher.map((details, index) => (
                           <>
-                            <div className='box'>
+                            <div className='box' key={index}>
                               <div className='dimg'>
                                 <img src={details.dcover} alt='' />
                               </div>

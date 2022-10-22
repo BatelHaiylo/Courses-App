@@ -17,6 +17,18 @@
   justify-content: space-between;
   padding: 10px auto;
 }
+
+.user-menu{
+  background-color: rgba(0, 0, 0, 0.545) !important;
+}
+.desk-greeting{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mobile-greeting{
+  display: none;
+}
 @media screen and (max-width: 600px) {
   .mobile-nav {
     position: absolute;
@@ -24,5 +36,11 @@
     left: 0;
     width: 100%;
     background-color: #9698e3;
+  }
+  .desk-greeting{
+    display: none;
+  }
+  .mobile-greeting{
+    display: block;
   }
 }

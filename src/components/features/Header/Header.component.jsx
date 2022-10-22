@@ -4,10 +4,14 @@ import Button from "@mui/material/Button";
 import { UserAuth } from "../../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { MenuItem, Menu } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
 
 export default function Header() {
   const [click, setClick] = useState(false);
   const [display, setDisplay] = useState("none");
+  const [anchorEl, setAnchorEl] = useState(null);
+
   const { user, logout } = UserAuth();
   const navigate = useNavigate();
 
@@ -21,6 +25,14 @@ export default function Header() {
     }
   };
 
+  const handleMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <section className="header">
       <div className="container flexSB">
@@ -28,31 +40,108 @@ export default function Header() {
           <h1>GURU DD</h1>
           <span>ONLINE EDUCATION & LEARNING</span>
         </div>
-        <button className="toggle" onClick={() => setClick(!click)}>
-          <Link to="/account">
-            <i className="fa fa-user icon" aria-hidden="true"></i>
-          </Link>
-        </button>
-          {user ? (
-            <div className="user">
-              <Button
-                variant="outlined"
-                className="popBtn"
-                onClick={handleLogout}
-              >
-                log out
-              </Button>
-              <p>Hi {user.displayName}</p>
-              <Link to="/account">
-                <i className="fa fa-user icon" aria-hidden="true"></i>
-              </Link>
-            </div>
-          ) : (
-            <Link to="/account">
+        {user ? (
+          <div className="user">
+            <p className="desk-greeting">Hi {user.displayName}</p>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleMenu}
+              color="inherit"
+            >
               <i className="fa fa-user icon" aria-hidden="true"></i>
-            </Link>
-          )}
-        </div>
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorEl}
+              anchorOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              className="user-menu"
+              open={Boolean(anchorEl)}
+              onClose={handleClose}
+            >
+              <MenuItem>
+                <p style={{ color: "#f24e1e" }} className="mobile-greeting">Hi {user.displayName}</p>
+              </MenuItem>
+
+              <MenuItem>
+                <Button
+                  variant="outlined"
+                  className="popBtn"
+                  onClick={handleClose}
+                >
+                  <Link to="/account" className="popBtn">
+                    {" "}
+                    Account
+                  </Link>
+                </Button>
+              </MenuItem>
+
+              <MenuItem>
+                <Button
+                  variant="outlined"
+                  className="popBtn"
+                  onClick={handleLogout}
+                >
+                  log out
+                </Button>
+              </MenuItem>
+            </Menu>
+          </div>
+        ) : (
+          <>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleMenu}
+              color="inherit"
+            >
+              <i className="fa fa-user icon" aria-hidden="true"></i>
+            </IconButton>
+
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorEl}
+              anchorOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              className="user-menu"
+              open={Boolean(anchorEl)}
+              onClose={handleClose}
+            >
+              <MenuItem>
+              <Button
+                  variant="outlined"
+                  className="popBtn"
+                  onClick={handleClose}
+                >
+                  <Link to="/account" className="popBtn">
+                    {" "}
+                    log in
+                  </Link>
+                </Button>
+              </MenuItem>
+            </Menu>
+          </>
+        )}
+      </div>
     </section>
   );
 }
