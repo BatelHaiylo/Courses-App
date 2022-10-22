@@ -60,6 +60,7 @@ export default function SignUp() {
               name="email"
               required
               onChange={(e) => setEmail(e.target.value)}
+              data-testid="signup-email-input"
             />
             <br />
             <TextField
@@ -70,6 +71,8 @@ export default function SignUp() {
               name="password"
               required
               onChange={(e) => setPassword(e.target.value)}
+              data-testid="signup-password-input"
+
             />
             <br />
 
@@ -81,6 +84,8 @@ export default function SignUp() {
               name="verifypassword"
               required
               onChange={handleChange}
+              data-testid="signup-verifypassword-input"
+
             />
             <br />
             <TextField
@@ -91,6 +96,8 @@ export default function SignUp() {
               name="firstName"
               required
               onChange={handleChange}
+              data-testid="signup-fName-input"
+
             />
             <br />
             <TextField
@@ -101,13 +108,14 @@ export default function SignUp() {
               name="lastName"
               required
               onChange={handleChange}
+              data-testid="signup-lName-input"
             />
             <br />
             <p className="">
               By creating an account you agree <wbr />
               to our <a href="#">Terms and Privacy</a>.
             </p>
-            <button type="submit" className="popBtn">
+            <button type="submit" className="popBtn" data-testid="signup-btn">
               Sign Up
             </button>
           </form>

@@ -64,6 +64,7 @@ export default function SignIn() {
               name="email"
               required
               onChange={(e) => setEmail(e.target.value)}
+              data-testid="signin-email-input"
             />
             <br />
             <TextField
@@ -74,9 +75,10 @@ export default function SignIn() {
               name="password"
               onChange={(e) => setPassword(e.target.value)}
               required
+              data-testid="signin-password-input"
             />
             <br />
-            <button type="submit" className="popBtn">
+            <button type="submit" className="popBtn" data-testid="signin-btn">
               Sign In
             </button>
           </form>
@@ -84,6 +86,7 @@ export default function SignIn() {
             className="g-btn"
             type="dark"
             onClick={handleGoogleSignIn}
+            data-testid="google-btn"
           />
         </Box>
       </div>

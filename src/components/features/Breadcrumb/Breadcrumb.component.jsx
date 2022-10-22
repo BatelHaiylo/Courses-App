@@ -7,7 +7,7 @@ export default function Breadcrumb({ title }) {
   return (
     <>
       <section className='back'>
-        <h2>Home / {location.pathname.split("/")[1]}</h2>
+        <h2 data-testid={`breadcrumb-${location.pathname}`}>Home / {location.pathname.split("/")[1]}</h2>
         <h1>{title}</h1>
       </section>
       <div className='margin'></div>
